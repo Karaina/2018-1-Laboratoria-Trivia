@@ -1,35 +1,42 @@
 <!DOCTYPE html>
 <html>
+  <head> <h1> TRIVIA 2018 LABORATORIA </h1>
+  </head>
+  <body>
 
-<head>
-    <meta charset=utf-8>
-    <title>Trivia</title>
-    <link rel="stylesheet" href="style.css" />
-</head>
+<form id = "trivia" name = "trivia">
+        <p class = "pregunta1">
+    ¿Han egresado hombres a Laboratoria?
+  </p> 
+    <p><input type="radio" value="a" /> Sí  </p>
+   <p><input  type="radio" value="b" /> No </p>
 
-<body>
-    <div id="upperBar">
-        <span id="nameLabel">Nombre : </span>
-        <span id="name"></span>
+    
+   <p class = "pregunta2">
+    ¿Hay Laboratoria en Concepción?
+  </p>
+    <p> <input type="radio" value="a" /> Sí </p>
+   <p><input  type="radio" value="b" /> No </p>
+    
+      <p class = "pregunta3">    
+      ¿Hay Laboratoria en Lima?
+  </p>
+    <p> <input type="radio" value="a" /> Sí </p>
+   <p><input  type="radio" value="b" /> No </p>
+   
+        </form>
+  <div>
+<input id = "button" type = "button" value = "Resultados Trivia" onclick = "check();">
     </div>
-    <div id="scoreBoard">
-        <div id="rightAnswers">
-            <h2>Respuestas correctas</h2>
-            <div id="rightAnswersText">
+  
+    <div id = "after_submit">
 
-            </div>
-        </div>
-        <div id="wrongAnswers">
-            <h2>Respuestas incorrectas</h2>
-            <div id="wrongAnswersText">
-
-            </div>
-        </div>
-    </div>
-    <div id="warningBlock">
-        <p id="warningMessage"></p>
-    </div>
-    <script src="app.js"></script>
-</body>
-
+<p id = "number_correct"></p>
+      
+      <p id = "message"></p>
+  
+</div>
+    
+    
+  </body>
 </html>
